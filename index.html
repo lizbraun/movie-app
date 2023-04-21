@@ -16,13 +16,13 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="title">
+            <div class="site-title">
                 <i id="like" class="fa-solid fa-thumbs-up fa-xl"></i>
                 <h1>Movie Review</h1>
                 <i id="dislike" class="fa-solid fa-thumbs-down fa-xl"></i>  
             </div>
 
-            <p>Enjoying Hollywood's most recent movies? See how your opinions shape up against everyone else!</p>
+            <p>Enjoying the newest theatrical releases? See how your opinions shape up against other movie goers by liking or disliking each movie!</p>
         </div>
     </header>
     
@@ -42,6 +42,7 @@
                         <a href="#/" onclick="javascript:btnClick2()"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
                     </div>
                 </div>
+                <p class="total-votes">Total votes: 100</p>
             </div>
             
         </div>
@@ -52,7 +53,7 @@
 
             <div class="votes-container">
                 <div class="likes">
-                    <p>120</p>
+                    <p>102</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
                 </div>
                 <div class="dislikes">
@@ -60,6 +61,7 @@
                     <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
                 </div>
             </div>
+            <p class="total-votes">Total votes: 147</p>
         </div>
 
         <div class="movie">
@@ -68,53 +70,87 @@
 
             <div class="votes-container">
                 <div class="likes">
-                    <p>#</p>
+                    <p>70</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
                 </div>
                 <div class="dislikes">
-                    <p>#</p>
+                    <p>36</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
                 </div>
             </div>
+            <p class="total-votes">Total votes: 106</p>
         </div>
 
         <div class="movie">
-            <img src="https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_FMjpg_UY6001_.jpg" alt="">
+            <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1670252160/amc-cdn/production/2/movies/60500/60457/PosterDynamic/146621.jpg" alt="">
             <p class="movie-title">John Wick: Chapter 4</p>
     
             <div class="votes-container">
                 <div class="likes">
-                    <p>#</p>
+                    <p>79</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
                 </div>
                 <div class="dislikes">
-                    <p>#</p>
+                    <p>53</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
                 </div>
             </div>
+            <p class="total-votes">Total votes: 132</p>
         </div>
 
-        
+        <div class="movie">
+            <img src="https://m.media-amazon.com/images/M/MV5BMmZiN2VmMjktZDE5OC00ZWRmLWFlMmEtYWViMTY4NjM3ZmNkXkEyXkFqcGdeQXVyMTI2MTc2ODM3._V1_FMjpg_UY2048_.jpg" alt="">
+            <p class="movie-title">Evil Dead Rise</p>
+    
+            <div class="votes-container">
+                <div class="likes">
+                    <p>21</p>
+                    <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
+                </div>
+                <div class="dislikes">
+                    <p>14</p>
+                    <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
+                </div>
+            </div>
+            <p class="total-votes">Total votes: 35</p>
+        </div>
 
+        <div class="movie">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTFmMmNlZTQtZGFkYS00YjA0LWE3OTctMDkxNzA2YjdjYjMwXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_FMjpg_UX1080_.jpg" alt="">
+            <p class="movie-title">The Pope's Exorcist</p>
+    
+            <div class="votes-container">
+                <div class="likes">
+                    <p>46</p>
+                    <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
+                </div>
+                <div class="dislikes">
+                    <p>42</p>
+                    <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
+                </div>
+            </div>
+            <p class="total-votes">Total votes: 88</p>
+        </div>
     </section>
 
     <!-- Javascript-->
     <script>
-        var timesClicked = 55;
+        var timesClicked1 = 0;
         function btnClick1(){
-           timesClicked ++;
+           timesClicked1 ++;
                 
-            document.getElementById('timesClicked1').innerHTML = timesClicked;
+            document.getElementById('timesClicked1').innerHTML = timesClicked1;
            return true 
         }
 
-        var timesClicked = 0;
+        var timesClicked2 = 0;
         function btnClick2(){
-           timesClicked ++;
+           timesClicked2 ++;
                 
-            document.getElementById('timesClicked2').innerHTML = timesClicked;
+            document.getElementById('timesClicked2').innerHTML = timesClicked2;
            return true 
-    }
+        }
+
    </script>
 </body>
 </html>

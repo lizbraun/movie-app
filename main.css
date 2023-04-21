@@ -17,23 +17,30 @@ header{
 
 .header-content p{
     text-align: center;
+    margin-top: 0px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px !important;
 }
 
 header h1{
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 10px;
 }
 
 header #like{
     color: #00b8a2;
+    margin-top: 10px;
 }
 
 header #dislike{
     color: #dd5c74;
+    margin-top: 10px;
 }
 
-.title{
+.site-title{
     text-align: center;
     display: flex;
     align-items: center;
@@ -45,15 +52,17 @@ header #dislike{
     font-weight: 600;
     font-size: 24px;
     font-family: "proxima-nova-condensed", sans-serif;
+    margin: 0px;
+    margin-top: 15px;
 }
 
 .movie img{
-    width: 350px;
+    width: 250px;
     object-fit: cover;
 }
 
 .movie{
-    width: 90%;
+    width: 300px;
     margin: auto ;
     display: block;
     text-align: center;
@@ -62,7 +71,7 @@ header #dislike{
     margin-bottom: 35px ;
     border-radius: 10px;
     background-color: #202020;
-    padding: 30px 0px;
+    padding: 25px 0px;
 }
 
 .votes-container{
@@ -98,29 +107,41 @@ a{
     margin-left: 10px;
 }
 
-
+.total-votes{
+    font-family: "proxima-nova-condensed", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    margin: 5px 0px;
+    color: rgb(148, 148, 148);
+}
 
 
 /* Web size */
 @media (min-width: 1224px){
 
+.header-content p{
+    width: 100%;
+}
+
 .movies{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
+    justify-content: center;
     width: 85%;
     margin: 0 auto;
 }
 
 .movie{
-    width: 320px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    flex: 0 0 31%;
+    max-width: 320px;
+    min-width: 300px;
+    margin: 15px 15px;
 }
 
 .movie img{
-    width: 255px;
-    height: 378px;
+    width: 230px;
+    height: 340px;
     object-fit: cover;
 }
 
@@ -128,20 +149,25 @@ a{
 
 
 /* Tablet size */
-@media (min-width: 768px) and (max-width: 1223px) {
+@media (min-width: 700px) and (max-width: 1223px) {
+
+.header-content p{
+    width: 85%;
+    margin: auto;
+}
 
 .movies{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
-    width: 80%;
+    justify-content: center;
+    width: 85%;
     margin: 0 auto;
 }
 
 .movie{
-    flex: 0 0 46%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    flex: 0 0 60%;
+    max-width: 320px;
+    margin: 15px 15px;
 }
 
 .movie img{
@@ -149,6 +175,5 @@ a{
     height: 378px;
     object-fit: cover;
 }
-
 
 }
