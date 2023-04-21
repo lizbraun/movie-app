@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    font-family: "proxima-nova", sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #202020;
+    margin-bottom: 30px;
+    box-shadow: 0px 3px 18px black;
+}
+
+.header-content p{
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header #like{
+    color: #00b8a2;
+}
+
+header #dislike{
+    color: #dd5c74;
+}
+
+.title{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-title{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: "proxima-nova-condensed", sans-serif;
+}
+
+.movie img{
+    width: 350px;
+    object-fit: cover;
+}
+
+.movie{
+    width: 90%;
+    margin: auto ;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 35px;
+    margin-bottom: 35px ;
+    border-radius: 10px;
+    background-color: #202020;
+    padding: 30px 0px;
+}
+
+.votes-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 55px;
+}
+
+.likes, .dislikes{
+    display: flex;
+    align-items: center;
+}
+
+.fa-solid{
+    font-size: 34px;
+}
+
+a{
+    color: white;
+}
+
+.likes a:focus{
+    color: #00b8a2;
+    transition: .2s;
+}
+
+.dislikes a:focus{
+    color: #dd5c74;
+    transition: .2s;
+}
+
+.likes a, .dislikes a{
+    margin-left: 10px;
+}
+
+
+
+
+/* Web size */
+@media (min-width: 1224px){
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.movie{
+    width: 320px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.movie img{
+    width: 255px;
+    height: 378px;
+    object-fit: cover;
+}
+
+}
+
+
+/* Tablet size */
+@media (min-width: 768px) and (max-width: 1223px) {
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.movie{
+    flex: 0 0 46%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.movie img{
+    width: 255px;
+    height: 378px;
+    object-fit: cover;
+}
+
+
+}

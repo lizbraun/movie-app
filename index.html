@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xkv8pig.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/c9e83def1c.js" crossorigin="anonymous"></script>
+
+
+    <title>Movie Application</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="title">
+                <i id="like" class="fa-solid fa-thumbs-up fa-xl"></i>
+                <h1>Movie Review</h1>
+                <i id="dislike" class="fa-solid fa-thumbs-down fa-xl"></i>  
+            </div>
+
+            <p>Enjoying Hollywood's most recent movies? See how your opinions shape up against everyone else!</p>
+        </div>
+    </header>
+    
+    <section class="movies">
+        <div class="movie">
+            <div class="movie-container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/de/AirFilmPoster.png" alt="">
+                <p class="movie-title">Air</p>
+
+                <div class="votes-container">
+                    <div class="likes">
+                        <span id="timesClicked1">0</span>
+                        <a href="#/" onclick="javascript:btnClick1()"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
+                    </div>
+                    <div class="dislikes">
+                        <span id="timesClicked2">0</span>
+                        <a href="#/" onclick="javascript:btnClick2()"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="movie">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZDM0YjEzN2Y0ZjNhXkEyXkFqcGdeQXVyMTEwMTQ4MzU5._V1_FMjpg_UX700_.jpg" alt="">
+            <p class="movie-title">The Super Mario Bros. Movie</p>
+
+            <div class="votes-container">
+                <div class="likes">
+                    <p>120</p>
+                    <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
+                </div>
+                <div class="dislikes">
+                    <p>45</p>
+                    <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://m.media-amazon.com/images/M/MV5BNDIwYjVjMDMtOGYxMy00ZTRiLWE0YzktMjIwYmNhOGE4NGQ4XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UX560_.jpg" alt="">
+            <p class="movie-title">Renfield</p>
+
+            <div class="votes-container">
+                <div class="likes">
+                    <p>#</p>
+                    <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
+                </div>
+                <div class="dislikes">
+                    <p>#</p>
+                    <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_FMjpg_UY6001_.jpg" alt="">
+            <p class="movie-title">John Wick: Chapter 4</p>
+    
+            <div class="votes-container">
+                <div class="likes">
+                    <p>#</p>
+                    <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
+                </div>
+                <div class="dislikes">
+                    <p>#</p>
+                    <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+    <!-- Javascript-->
+    <script>
+        var timesClicked = 55;
+        function btnClick1(){
+           timesClicked ++;
+                
+            document.getElementById('timesClicked1').innerHTML = timesClicked;
+           return true 
+        }
+
+        var timesClicked = 0;
+        function btnClick2(){
+           timesClicked ++;
+                
+            document.getElementById('timesClicked2').innerHTML = timesClicked;
+           return true 
+    }
+   </script>
+</body>
+</html>
