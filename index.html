@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/xkv8pig.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/c9e83def1c.js" crossorigin="anonymous"></script>
@@ -17,24 +17,185 @@
     <header>
         <div class="header-content">
             <div class="site-title">
-                <i id="like" class="fa-solid fa-thumbs-up fa-xl"></i>
-                <h1>Movie Review</h1>
-                <i id="dislike" class="fa-solid fa-thumbs-down fa-xl"></i>  
+                <i id="dislike" class="fa-solid fa-thumbs-down fa-xl"></i>
+                <h1><span class="red">Movie</span> <span class="green">Review</span></h1>
+                <i id="like" class="fa-solid fa-thumbs-up fa-xl"></i>  
             </div>
 
-            <p>Enjoying the newest theatrical releases? See how your opinions shape up against other movie goers by liking or disliking each movie!</p>
+            <p class="p1">Sort through the latest theatrical releases and like or dislike each film!</p>
+            <p class="p2"> See how your opinions shape up against other movie goers!</p>
         </div>
     </header>
-    
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Movie Filters</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort by
+                    </a>
+                    <div class="dropdown">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Popular</button>
+                            <button class="dropdown-item" type="button">Alphabetical Order</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Genre
+                    </a>
+                    <div class="dropdown">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Comedy</button>
+                            <button class="dropdown-item" type="button">Drama</button>
+                            <button class="dropdown-item" type="button">Fantasy</button>
+                            <button class="dropdown-item" type="button">Horror</button>
+                            <button class="dropdown-item" type="button">Mystery</button>
+                            <button class="dropdown-item" type="button">Thriller</button>
+                            <button class="dropdown-item" type="button">Romance</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    MPAA Rating
+                    </a>
+                    <div class="dropdown">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">G</button>
+                            <button class="dropdown-item" type="button">PG</button>
+                            <button class="dropdown-item" type="button">PG-13</button>
+                            <button class="dropdown-item" type="button">R</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Release Date
+                    </a>
+                    <div class="dropdown">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Most Recent</button>
+                            <button class="dropdown-item" type="button">Past Week</button>
+                            <button class="dropdown-item" type="button">Past Month</button>
+                            <button class="dropdown-item" type="button">Past 6 Months</button>
+                            <button class="dropdown-item" type="button">Past Year</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ratings
+                    </a>
+                    <div class="dropdown">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">High Ratings</button>
+                            <button class="dropdown-item" type="button">Low Ratings</button>
+                            <button class="dropdown-item" type="button">Highest to Lowest</button>
+                            <button class="dropdown-item" type="button">Lowest to Highest</button>
+                            <button class="dropdown-item" type="button">Most Votes</button>
+                            <button class="dropdown-item" type="button">Least Votes</button>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search movies" aria-label="Search">
+            <button class="search" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- 
+    <div class="filters">
+        
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sort by
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Popular</button>
+                <button class="dropdown-item" type="button">Alphabetical Order</button>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Genre
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Comedy</button>
+                <button class="dropdown-item" type="button">Drama</button>
+                <button class="dropdown-item" type="button">Fantasy</button>
+                <button class="dropdown-item" type="button">Horror</button>
+                <button class="dropdown-item" type="button">Mystery</button>
+                <button class="dropdown-item" type="button">Thriller</button>
+                <button class="dropdown-item" type="button">Romance</button>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            MPAA Rating
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">G</button>
+                <button class="dropdown-item" type="button">PG</button>
+                <button class="dropdown-item" type="button">PG-13</button>
+                <button class="dropdown-item" type="button">R</button>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Release
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Most Recent</button>
+                <button class="dropdown-item" type="button">Past Week</button>
+                <button class="dropdown-item" type="button">Past Month</button>
+                <button class="dropdown-item" type="button">Past 6 Months</button>
+                <button class="dropdown-item" type="button">Past Year</button>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ratings
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">High Ratings</button>
+                <button class="dropdown-item" type="button">Low Ratings</button>
+                <button class="dropdown-item" type="button">Highest to Lowest</button>
+                <button class="dropdown-item" type="button">Lowest to Highest</button>
+            </div>
+        </div>
+
+    </div>
+    -->
+
     <section class="movies">
         <div class="movie">
             <div class="movie-container">
-                <img src="https://upload.wikimedia.org/wikipedia/en/d/de/AirFilmPoster.png" alt="">
-                <p class="movie-title">Air</p>
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1676302257/amc-cdn/production/2/movies/62400/62358/PosterDynamic/149048.jpg" alt="">
+                <p class="movie-title">Guardians of the Galaxy Vol. 3</p>
 
                 <div class="votes-container">
-                    <div class="likes">
-                        <span id="timesClicked1">52</span>
+                    <div class="likes" id="like-chosen-example">
+                        <span id="timesClicked1">97</span>
                         <a href="#/" onclick="javascript:btnClick1()"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
                     </div>
                     <div class="dislikes">
@@ -42,9 +203,117 @@
                         <a href="#/" onclick="javascript:btnClick2()"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
                     </div>
                 </div>
-                <p class="total-votes">Total votes: 81</p>
+               
+                <div class="votes-info">
+                    <p class="percent-votes-positive">77%</p>
+                    <p class="total-votes">of voters like this movie <br> 126 total votes</p>
+                </div>
+
+                <hr class="line"></hr>
+
+                <div class="subfilters">
+                    <p>PG-13</p>
+                    <p>Adventure</p>
+                    <p>May 2023</p>
+                </div>
             </div>
-            
+        </div>
+
+        <div class="movie">
+            <div class="movie-container">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1682718245/amc-cdn/production/2/movies/69500/69545/PosterDynamic/151806.jpg" alt="">
+                <p class="movie-title-s">Love Again</p>
+
+                <div class="votes-container" >
+                    <div class="likes">
+                        <p>44</p>
+                        <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
+                    </div>
+                    <div class="dislikes" id="dislike-chosen">
+                        <p>103</p>
+                        <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="votes-info">
+                    <p class="percent-votes-negative">30%</p>
+                    <p class="total-votes">of voters like this movie <br> 147 total votes</p>
+                </div>
+
+                <hr class="line"></hr>
+
+                <div class="subfilters">
+                    <p>PG-13</p>
+                    <p>Romance</p>
+                    <p>May 2023</p>
+                    <span class="lr">Low Rating</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie">
+            <div class="movie-container">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1676311107/amc-cdn/production/2/movies/68800/68819/PosterDynamic/149055.jpg" alt="">
+                <p class="movie-title">Are You There God? It's Me Margaret.</p>
+
+                <div class="votes-container">
+                    <div class="likes" id="like-chosen">
+                        <p>83</p>
+                        <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
+                    </div>
+                    <div class="dislikes">
+                        <p>14</p>
+                        <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="votes-info">
+                    <p class="percent-votes-positive">86%</p>
+                    <p class="total-votes">of voters like this movie <br> 97 total votes</p>
+                </div>
+
+                <hr class="line"></hr>
+
+                <div class="subfilters">
+                    <p>PG-13</p>
+                    <p>Comedy/Drama</p>
+                    <p>April 2023</p>
+                    <span class="hr">High Rating</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie">
+            <div class="movie-container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/de/AirFilmPoster.png" alt="">
+                <p class="movie-title-s">Air</p>
+
+                <div class="votes-container">
+                    <div class="likes">
+                        <p>102</p>
+                        <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
+                    </div>
+                    <div class="dislikes" id="dislike-chosen">
+                        <p>45</p>
+                        <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="votes-info">
+                    <p class="percent-votes-positive">86%</p>
+                    <p class="total-votes">of voters like this movie <br> 97 total votes</p>
+                </div>
+
+                <hr class="line"></hr>
+
+                <div class="subfilters">
+                    <p>R</p>
+                    <p>Drama</p>
+                    <p>April 2023</p>
+                    <span class="hr">High Rating</span>
+                </div>
+                
+            </div>
         </div>
 
         <div class="movie">
@@ -52,90 +321,156 @@
             <p class="movie-title">The Super Mario Bros. Movie</p>
 
             <div class="votes-container">
-                <div class="likes">
-                    <p>102</p>
+                <div class="likes" id="like-chosen">
+                    <p>123</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
                 </div>
                 <div class="dislikes">
-                    <p>45</p>
+                    <p>44</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
                 </div>
             </div>
-            <p class="total-votes">Total votes: 147</p>
+
+            <div class="votes-info">
+                    <p class="percent-votes-positive">74%</p>
+                    <p class="total-votes">of voters like this movie <br> 167 total votes</p>
+                </div>
+            
+
+            <hr class="line"></hr>
+
+                <div class="subfilters">
+                    <p>PG</p>
+                    <p>Adventure/Fantasy</p>
+                    <p>April 2023</p>
+                    <span class="mv">Most Votes</span>
+                </div>
         </div>
 
         <div class="movie">
             <img src="https://m.media-amazon.com/images/M/MV5BNDIwYjVjMDMtOGYxMy00ZTRiLWE0YzktMjIwYmNhOGE4NGQ4XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UX560_.jpg" alt="">
-            <p class="movie-title">Renfield</p>
+            <p class="movie-title-s">Renfield</p>
 
             <div class="votes-container">
-                <div class="likes">
-                    <p>70</p>
+                <div class="likes" id="like-chosen">
+                    <p>36</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
                 </div>
                 <div class="dislikes">
-                    <p>36</p>
+                    <p>70</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
                 </div>
             </div>
-            <p class="total-votes">Total votes: 106</p>
+
+            <div class="votes-info">
+                <p class="percent-votes-negative">34%</p>
+                <p class="total-votes">of voters like this movie <br> 106 total votes</p>
+            </div>
+
+            <hr class="line"></hr>
+
+                <div class="subfilters">
+                    <p>R</p>
+                    <p>Horror/Comedy</p>
+                    <p>April 2023</p>
+                    <span class="lr">Low Rating</span>
+                </div>
         </div>
 
         <div class="movie">
             <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1670252160/amc-cdn/production/2/movies/60500/60457/PosterDynamic/146621.jpg" alt="">
-            <p class="movie-title">John Wick: Chapter 4</p>
+            <p class="movie-title-s">John Wick: Chapter 4</p>
     
             <div class="votes-container">
-                <div class="likes">
-                    <p>79</p>
+                <div class="likes" id="like-chosen">
+                    <p>92</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
                 </div>
                 <div class="dislikes">
-                    <p>53</p>
+                    <p>10</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
                 </div>
             </div>
-            <p class="total-votes">Total votes: 132</p>
+
+            <div class="votes-info">
+                <p class="percent-votes-positive">82%</p>
+                <p class="total-votes">of voters like this movie <br> 112 total votes</p>
+            </div>
+
+            <hr class="line"></hr>
+
+                <div class="subfilters">
+                    <p>R</p>
+                    <p>Action</p>
+                    <p>March, 2023</p>
+                </div>
         </div>
 
         <div class="movie">
             <img src="https://m.media-amazon.com/images/M/MV5BMmZiN2VmMjktZDE5OC00ZWRmLWFlMmEtYWViMTY4NjM3ZmNkXkEyXkFqcGdeQXVyMTI2MTc2ODM3._V1_FMjpg_UY2048_.jpg" alt="">
-            <p class="movie-title">Evil Dead Rise</p>
+            <p class="movie-title-s">Evil Dead Rise</p>
     
             <div class="votes-container">
                 <div class="likes">
-                    <p>21</p>
+                    <p>41</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
                 </div>
-                <div class="dislikes">
-                    <p>14</p>
+                <div class="dislikes" id="dislike-chosen">
+                    <p>64</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
                 </div>
             </div>
-            <p class="total-votes">Total votes: 35</p>
+
+            <div class="votes-info">
+                <p class="percent-votes-negative">39%</p>
+                <p class="total-votes">of voters like this movie <br> 105 total votes</p>
+            </div>
+
+            <hr class="line"></hr>
+
+                <div class="subfilters">
+                    <p>R</p>
+                    <p>Horror/Fantasy</p>
+                    <p>April 2023</p>
+                </div>
         </div>
 
         <div class="movie">
             <img src="https://m.media-amazon.com/images/M/MV5BOTFmMmNlZTQtZGFkYS00YjA0LWE3OTctMDkxNzA2YjdjYjMwXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_FMjpg_UX1080_.jpg" alt="">
-            <p class="movie-title">The Pope's Exorcist</p>
+            <p class="movie-title-s">The Pope's Exorcist</p>
     
             <div class="votes-container">
                 <div class="likes">
-                    <p>46</p>
+                    <p>42</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-up fa-xl"></i></a>
                 </div>
-                <div class="dislikes">
-                    <p>42</p>
+                <div class="dislikes" id="dislike-chosen">
+                    <p>46</p>
                     <a href="#/"><i class="fa-solid fa-thumbs-down fa-xl"></i></a>
                 </div>
             </div>
-            <p class="total-votes">Total votes: 88</p>
+
+            <div class="votes-info">
+                <p class="percent-votes-negative">48%</p>
+                <p class="total-votes">of voters like this movie <br> 88 total votes</p>
+            </div>
+
+            <hr class="line"></hr>
+
+                <div class="subfilters">
+                    <p>R</p>
+                    <p>Horror</p>
+                    <p>April 2023</p>
+                </div>
         </div>
     </section>
 
+    <p class="results">1-9 of 375 results</p>
+    <button class="more-movies">Show More Movies</button>
+
     <!-- Javascript-->
     <script>
-        var timesClicked1 = 52;
+        var timesClicked1 = 97;
         function btnClick1(){
            timesClicked1 ++;
                 
@@ -152,5 +487,8 @@
         }
 
    </script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
