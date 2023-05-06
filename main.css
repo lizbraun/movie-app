@@ -379,6 +379,34 @@ a{
     margin: 15px 0px;
 }
 
+.other{
+    margin: auto;
+    justify-content: center;
+    display: block;
+    color: white;
+    background-color: #007a6c;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    outline-color: none;
+    transition: .2s;
+    margin-bottom: 30px;
+}
+
+.other a{
+    color: white;
+    text-decoration: none;
+}
+
+.other:hover{
+    text-decoration: none;
+    border: none;
+    background-color: #2e2e2e;
+    transition: .2s;
+}
+
 /* Web size */
 @media (min-width: 1224px) and (max-width: 1680px){
 
